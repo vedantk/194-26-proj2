@@ -1,0 +1,215 @@
+<html>
+  <head>
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+      // Build a table of contents.
+      $(document).ready(function() {
+        var toc = "<ul>";
+        $("html h3").each(function() {
+          var el = $(this);
+          var title = el.text();
+          var link = '#' + el.attr("id");
+
+          toc += "<li><a href='" + link + "'>" + title + "</a></li>";
+        });
+        toc += "</ul>";
+        $(toc).insertAfter("#TOC");
+      });
+    </script>
+
+    <title>es194-e{m,o} | proj2</title>
+  </head>
+
+  <body>
+    <h1>Building a pinhole camera</h1>
+    <h2>Vedant and Melanie's cs194-26 project 2, submitted on 09/18/2014</h2>
+    <div>
+      <p id="TOC">Table of contents:</p>
+    </div>
+
+    <div>
+      <h3 id="l1">The setup</h3>
+
+      <p>
+        This is the exciting story of how we built a pinhole camera, took touristy pictures, and learned about photography.
+      </p>
+
+      <p>
+        We started off in the Cory makerspace. That's where we found all of the things we'd need to build a miniature dark room:
+        <center>
+          <table>
+            <tr>
+              <td>
+                <img src="pix/IMG_1332.JPG" style="width:400px; height=auto">
+              </td>
+              <td>
+                <img src="pix/IMG_1361.JPG" style="width:400px; height=auto">
+              </td>
+            </tr>
+          </table>
+        </center>
+      </p>
+
+      <p>
+        It took a fair amount of measuring and marking, as well as some poking and padding, but we successfully assembled our box. Here it is:
+        <center>
+          <table>
+            <tr>
+              <td>
+                <img src="pix/p1.jpg" style="width:300px; height=auto">
+              </td>
+              <td>
+                <img src="pix/p3.jpg" style="width:300px; height=auto">
+              </td>
+              <td>
+                <img src="pix/p4.jpg" style="width:300px; height=auto">
+              </td>
+            </tr>
+          </table>
+        </center>
+
+        At this point we should note that James Chang graciously donated his Canon EOS-M to us, and that we couldn't have done this project without it. We feel a little guilty about putting it in so many precarious positions. Sorry James!
+      </p>
+      <p>One further note: we used ImageMagick to transpose our images but we haven't done any other post-processing on the images you're about to see.
+    </div>
+
+    <div>
+      <h3 id="l2">Two scenes, three aperture sizes</h3>
+    </div>
+
+    <div>
+      <h3 id="l3">A camera obscura in a room!</h3>
+    </div>
+
+    <div>
+      <h3 id="l4">Light painting</h3>
+
+      <p>
+        We needed to find a <i>really dark</i> room to try light painting. My closet was perfect for the job. Here's what it looked like when lit (left), and with the lights turned out (right).
+        <center>
+          <table>
+            <tr>
+              <td>
+                <img src="pix/p6.jpg" style="width:300px; height=auto">
+              </td>
+              <td>
+                <img src="pix/p7.jpg" style="width:300px; height=auto">
+              </td>
+            </tr>
+          </table>
+        </center>
+      </p>
+
+      <p>
+        It was pretty spooky in there but I didn't let it get to me. Fearlessly, I started painting with light:
+        <center>
+          <table>
+            <tr>
+              <td>
+                <img src="pix/IMG_1451.JPG" style="width:500px; height=auto">
+              </td>
+              <td>
+                <img src="pix/IMG_1449.JPG" style="width:500px; height=auto">
+            </tr>
+            <tr>
+              </td>
+              <td>
+                <img src="pix/IMG_1452.JPG" style="width:500px; height=auto">
+              </td>
+              <td>
+                <img src="pix/IMG_1454.JPG" style="width:500px; height=auto">
+              </td>
+            </tr>
+          </table>
+        </center>
+      </p>
+      <p>Here we see a loop, the symbol for existential quantifiers, a collection of sine waves, and the letter V (in clockwise order). Unfortunately, I couldn't manage anything much more complicated because it's hard to draw transposed pictures in a cramped space. I'm glad that we got really crisp light paintings though.</p>
+      <p>Note: The top-right image is brighter than the other three because it was intentionally overexposed (with a higher ISO sensitivity and wider aperture). This causes an interesting blurring effect, effectively widening my light paintbrush (read: iPhone flashlight).</p>
+    </div>
+
+    <div>
+      <h3 id="l5">Additional pictures</h3>
+    </div>
+
+    <div>
+      <h3 id="l6">Memorable scenes</h3>
+
+      <p>
+        This is the first scene we captured (top), and what it's actually supposed to look like (bottom).
+        <center>
+          <table>
+            <tr>
+              <td>
+                <img src="pix/1358.jpg" style="width:300px; height=auto">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="pix/p2.jpg" style="width:300px; height=auto">
+              </td>
+            </tr>
+          </table>
+        </center>
+      </p>
+
+      <p>
+        We had to make some serious sacrifices to take the following two pictures. On the left we see North Gate: we mounted the camera on top of two trash cans to get this shot, which was a very smelly ordeal. On the right is a picture from the west side of campus: we had to climb on top of a parking kiosk to mount the camera.
+        <center>
+          <table>
+            <tr>
+              <td>
+                <img src="pix/1366.jpg" style="width:400px; height=auto">
+              </td>
+              <td>
+                <img src="pix/1424.jpg" style="width:400px; height=auto">
+              </td>
+            </tr>
+          </table>
+        </center>
+      </p>
+
+      <p>
+        Here's the campanile:
+         <center>
+          <table>
+            <tr>
+              <td>
+                <img src="pix/1477.jpg" style="width:400px; height=auto">
+              </td>
+              <td>
+                <img src="pix/1474.jpg" style="width:400px; height=auto">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="pix/1374.jpg" style="width:400px; height=auto">
+              </td>
+              <td>
+                <img src="pix/1375.jpg" style="width:400px; height=auto">
+              </td>
+            </tr>
+          </table>
+        </center>
+      </p>
+
+      <p>
+        Here are our selfies (we were squinting because it was bright out):
+         <center>
+          <table>
+            <tr>
+              <td>
+                <img src="pix/1480.jpg" style="width:300px; height=auto">
+              </td>
+              <td>
+                <img src="pix/1481.jpg" style="width:300px; height=auto">
+              </td>
+              <td>
+                <img src="pix/1483.jpg" style="width:300px; height=auto">
+              </td>
+            </tr>
+          </table>
+        </center>
+      </p>
+    </div>
+  </body>
+</html>
